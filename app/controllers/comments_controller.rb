@@ -4,9 +4,9 @@ class CommentsController < ApplicationController
     @comment = @post.comments.build(comment_params)
     @comment.user = current_user
     if @comment.save
-      redirect_to @post, notice: "Comment was successfully created."
+      redirect_to @post, notice: 'Comment was successfully created.'
     else
-      redirect_to @post, alert: "Failed to add comment."
+      redirect_to @post, alert: 'Failed to add comment.'
     end
   end
 
