@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :correct_user, only: [:edit, :update, :destroy]
+  before_action :authenticate_user!, only: [ :new, :create, :edit, :update, :destroy ]
+  before_action :set_post, only: [ :show, :edit, :update, :destroy ]
+  before_action :correct_user, only: [ :edit, :update, :destroy ]
   # GET /posts or /posts.json
   def index
     if params[:search].present?
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
   def create
     @post = current_user.posts.new(post_params)  # ใช้ current_user เชื่อมโยงโพสต์กับผู้ใช้ที่ล็อกอิน
     if @post.save
-      redirect_to @post, notice: 'Post was successfully created.'
+      redirect_to @post, notice: "Post was successfully created."
     else
       render :new
     end

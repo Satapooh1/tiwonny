@@ -3,13 +3,13 @@ Rails.application.routes.draw do
   get "profiles/edit"
   get "profiles/update"
   devise_for :users
-  resource :profile, only: [:show, :edit, :update]
-  
+  resource :profile, only: [ :show, :edit, :update ]
+
   resources :posts do
     resources :comments, only: :create
-    resources :likes, only: [:create, :destroy]
+    resources :likes, only: [ :create, :destroy ]
   end
-  
+
   # Health check route
   get "up" => "rails/health#show", as: :rails_health_check
 
