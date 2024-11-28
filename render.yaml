@@ -1,6 +1,6 @@
 databases:
   - name: haha
-    databaseName: hahha
+    databaseName: haha
     user: mysite
     plan: free
 
