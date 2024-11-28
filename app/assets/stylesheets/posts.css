@@ -1,0 +1,157 @@
+/* ปรับตำแหน่งปุ่มด้านบน */
+.top-button-container {
+    display: flex;
+    justify-content: space-between; /* ใช้ space-between เพื่อให้ปุ่ม Profile อยู่ซ้ายสุดและปุ่ม Logout อยู่ขวาสุด */
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 0 30px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.top-button-container h1 {
+    flex-grow: 1; /* ให้ Tiwonny ขยายพื้นที่ */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+    margin: 0; /* ลบ margin ที่ไม่จำเป็น */
+    font-size: 40px;
+  }
+
+/* กำหนดขนาดและจัดกึ่งกลางเนื้อหาหลัก */
+.container {
+    max-width: 900px; /* ขยายขนาดเพื่อให้ดูโปร่งสบายขึ้น */
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f4f7fa; /* พื้นหลังที่สว่างและสบายตา */
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ปรับสไตล์ของโพสต์ */
+.post {
+    position: relative; /* กำหนดให้โพสต์เป็น relative เพื่อให้สามารถจัดตำแหน่งปุ่มในโพสต์นี้ */
+    border: 1px solid #e0e0e0; /* กรอบที่อ่อนนุ่ม */
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background-color: #ffffff; /* สีพื้นหลังโพสต์ */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* เพิ่มการเคลื่อนไหวให้โพสต์ */
+}
+
+.post:hover {
+    transform: translateY(-5px); /* ทำให้โพสต์ยกขึ้นเมื่อ hover */
+}
+
+/* ปรับปุ่ม */
+.button-container {
+    margin-top: 10px;
+    text-align: right;
+    align-items: center;
+}
+
+.button-inline {
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease; /* เพิ่ม transition สำหรับสี */
+}
+
+button, a.button-inline {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border: none;
+    text-align: center;
+}
+
+.button-inline:hover {
+    background-color: #0056b3;
+}
+
+/* ปรับสไตล์ฟอร์มค้นหา */
+form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%; /* ให้กล่องค้นหากว้างขึ้น */
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* ปรับสไตล์ปุ่ม Delete */
+.delete-button {
+    position: absolute;
+    bottom: 10px; /* กำหนดให้ปุ่มอยู่ที่มุมล่าง */
+    right: 20px; /* กำหนดให้ปุ่มอยู่ขวามือ */
+    background-color: #dc3545; /* สีพื้นหลังแดง */
+    color: white; /* สีตัวอักษรขาว */
+    padding: 8px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* สีพื้นหลังเมื่อ hover เป็นสีแดงเข้ม */
+}
+
+/* ปรับตำแหน่งของปุ่ม Show และ Edit ให้เป็นมุมขวาบน */
+.show-edit-buttons {
+    position: absolute;
+    top: 10px; /* อยู่ที่มุมบน */
+    right: 10px; /* อยู่ขวามือ */
+}
+
+.profile-image {
+    display: inline-block;
+    width: 40px; /* ขนาดของรูป */
+    height: 40px; /* ขนาดของรูป */
+    border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
+    overflow: hidden; /* ซ่อนส่วนที่เกินขอบวงกลม */
+    border: 2px solid #b0b0b0; /* ขอบสีเทา */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.1); /* ขยายเล็กน้อยเมื่อ hover */
+    border-color: #a0a0a0; /* เปลี่ยนสีขอบเมื่อ hover */
+}
+
+.post-user {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px; /* ปรับขนาดข้อความ */
+    color: #555; /* สีตัวอักษร */
+}
+
+.post-user .post-owner {
+    margin-right: auto; /* ดันให้ชื่อเจ้าของโพสต์อยู่ซ้ายสุด */
+}

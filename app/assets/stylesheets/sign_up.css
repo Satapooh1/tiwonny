@@ -1,0 +1,56 @@
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px; /* จำกัดความกว้างของฟอร์ม */
+    margin: 0 auto; /* จัดให้อยู่กึ่งกลางหน้าจอ */
+    padding: 20px;
+    background-color: #f9f9f9; /* สีพื้นหลังของฟอร์ม */
+    border: 1px solid #ddd; /* เส้นขอบฟอร์ม */
+    border-radius: 8px; /* มุมขอบโค้งมน */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงาฟอร์ม */
+}
+  
+.field {
+    margin-bottom: 15px; /* ระยะห่างระหว่างฟิลด์ */
+}
+  
+label {
+    display: block; /* ทำให้ label อยู่ด้านบนของ input */
+    margin-bottom: 5px; /* ระยะห่างระหว่าง label กับ input */
+    font-weight: bold;
+}
+  
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%; /* ปรับขนาดให้เต็มความกว้างของฟอร์ม */
+    padding: 10px; /* เพิ่ม padding ให้ข้อความไม่ชิดขอบ */
+    border: 1px solid #ccc; /* เส้นขอบของ input */
+    border-radius: 5px; /* มุมโค้งมน */
+    box-sizing: border-box; /* รวม padding และ border ในขนาด */
+    font-size: 16px;
+}
+  
+input[type="submit"] {
+    background-color: #007bff; /* สีพื้นหลังปุ่ม */
+    color: white; /* สีตัวอักษร */
+    cursor: pointer; /* เปลี่ยนเมาส์เป็น pointer */
+    border: none; /* ไม่มีขอบ */
+    transition: background-color 0.3s ease; /* เพิ่มเอฟเฟกต์เปลี่ยนสี */
+}
+  
+input[type="submit"]:hover {
+    background-color: #0056b3; /* สีพื้นหลังเมื่อ hover */
+}
+  
+.extra-links {
+    margin-top: 15px; /* ระยะห่างระหว่างฟอร์มกับลิงก์ */
+    text-align: center;
+}

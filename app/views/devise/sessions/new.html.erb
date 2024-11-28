@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag 'login', media: 'all' %>
+
+<h2>Log in</h2>
+
+<div class="login-container">
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "login-form" }) do |f| %>
+    <div class="field">
+      <%= f.label :email, "Email Address", class: "form-label" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-input" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password, "Password", class: "form-label" %>
+      <%= f.password_field :password, autocomplete: "current-password", class: "form-input" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Log in", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
+
+<div class="extra-links">
+  <%= render "devise/shared/links" %>
+</div>
+

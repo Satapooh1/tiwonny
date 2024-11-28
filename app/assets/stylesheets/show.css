@@ -1,0 +1,106 @@
+.text-size {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+  
+.post-details {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+  
+.post-likes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+  
+.post-likes button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+  
+.post-likes button:hover {
+  background-color: #0056b3;
+}
+  
+.comments {
+  margin-top: 20px;
+}
+  
+.comment {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+  
+.comment:last-child {
+  border-bottom: none;
+}
+  
+.comment-form {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+  
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+  
+.comment-form input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+.comment-form input[type="submit"]:hover {
+  background-color: #218838;
+}
+  
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+  
+
+.post-container {
+  max-width: 800px; /* กำหนดความกว้างสูงสุด */
+  margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+  padding: 20px;
+  background-color: #f4f7fa;;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.post-user {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px; /* ปรับขนาดข้อความ */
+  color: #555; /* สีตัวอักษร */
+}

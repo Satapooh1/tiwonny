@@ -1,0 +1,14 @@
+<%= stylesheet_link_tag 'profile', media: 'all' %>
+
+<div class = 'container'>
+    <h1>Profile</h1>
+
+        <p><strong>Email:</strong> <%= @user.email %></p>
+        <p><strong>Name:</strong> <%= @user.name %></p>
+        <p><strong>Bio:</strong> <%= @user.bio %></p>
+
+    <div class = 'detail' >
+        <%= link_to 'Edit Profile', edit_profile_path, class: 'button-inline' %>
+        <%= link_to "Back to posts", posts_path, class: 'button-inline' %>
+    </div>
+</div>

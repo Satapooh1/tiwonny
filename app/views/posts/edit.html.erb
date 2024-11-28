@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag "new_post", media: "all" %>
+
+<% content_for :title, "Editing post" %>
+
+<div class="container">
+  <h1>Editing post</h1>
+
+  <div class="form-container">
+    <%= render "form", post: @post %>
+  </div>
+
+  <br>
+
+  <div class="button-container">
+    <%= link_to "Show this post", @post , class: "button-inline back-button"%>
+    <%= link_to "Back to posts", posts_path , class: "button-inline back-button"%>
+  </div>
+</div>

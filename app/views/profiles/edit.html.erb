@@ -1,0 +1,24 @@
+<%= stylesheet_link_tag 'profile', media: 'all' %>
+
+<h1>Edit Profile</h1>
+
+<%= form_with model: @user, url: profile_path, local: true do |form| %>
+  <div>
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :bio %>
+    <%= form.text_area :bio %>
+  </div>
+
+  <div>
+    <%= form.submit 'Update Profile' %>
+  </div>
+<% end %>
